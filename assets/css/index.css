@@ -87,7 +87,7 @@ section.section h2.section-title span:before {
 }
 
 .section-home .banner-text h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0 0 15px;
@@ -98,7 +98,9 @@ section.section h2.section-title span:before {
     letter-spacing: 0.2px;
     margin-bottom: 0px;
 }
-
+.section-home .banner-text p>b {
+    font-style: italic;
+}
 .section-home .social-links {
     padding: 24px 0;
 }
@@ -772,7 +774,7 @@ section.section-feedback .feedback-slider .testi-item .intro {
     margin: 10px 0;
 }
 section.section-feedback .feedback-slider .testi-item .intro h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #130f40;
     font-weight: 700;
 }
@@ -790,8 +792,8 @@ section.section-feedback .feedback-slider .testi-item p:before{
     content: '';
     position: absolute;
     z-index: -1;
-    top: -10px;
-    left: 10px;
+    top: -11px;
+    left: 5px;
     width: 25px;
     height: 25px;
     background-image: url('/assets/icon/nhay-don.svg');
@@ -930,7 +932,11 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
 
 
 /*============ BREAK POINT DEVICE =============*/
-
+@media (max-width: 1199px) and (min-width: 992px) {
+    .section-home .banner-text h3{
+        font-size: 1.5rem !important;
+    }
+}
 @media (max-width: 991px) and (min-width: 768px) {
     .section-contact .contact-body .col-left .contact-info {
         margin-bottom: 15px;
@@ -979,13 +985,9 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
         margin-bottom: 5px;
     }
     .section-home .banner-text h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: 500;
         margin-bottom: 10px;
-    }
-    .section-home .banner-text h3 {
-        font-size: 1.7rem;
-        font-weight: 500;
     }
     .section-home .banner-text p {
         font-size: 0.8rem;
@@ -1003,5 +1005,10 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
 @media (max-width: 321px) {
     .section-home .banner-inner .center-picture {
         max-width: 130px;
+    }
+    .section-home .banner-text h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 }

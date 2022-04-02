@@ -95,7 +95,7 @@ var swiper = new Swiper(".feedback-slider", {
     spaceBetween: 20,
     loop:true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false, 
     },
     pagination: {
@@ -117,6 +117,7 @@ var swiper = new Swiper(".feedback-slider", {
     },
 
 }); 
+/*--------------- Odometer Counter ---------------*/ 
 $(document).ready(function ($) {
     $(".odometer").appear(function () {
         var odometerItem = $(".odometer");
