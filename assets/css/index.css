@@ -1011,4 +1011,7 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
         font-weight: 500;
         margin-bottom: 10px;
     }
+    .section-home .banner-inner .info-button .btn {
+       font-size: 0.9rem;
+    }
 }
