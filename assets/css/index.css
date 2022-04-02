@@ -25,7 +25,7 @@ section.section h2.section-title span {
 section.section h2.section-title span:before {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: -3px;
     left: 0;
     z-index: -1;
     background: var(--mainColor);
@@ -404,7 +404,9 @@ section.section h2.section-title span:before {
 .section-about .col-right .about-content p {
     margin-bottom: 5px;
 }
-
+.section-about .col-right .about-content b {
+    font-style: italic;
+}
 .section-about .col-right .about-button {
     margin-top: 20px;
 }
@@ -464,7 +466,6 @@ section.section h2.section-title span:before {
     padding: 0 0px 20px 35px;
     height: 100%;
 }
-
 .section-experience .experience-list .experience-item i {
     position: absolute;
     top: 18px;
@@ -488,7 +489,6 @@ section.section h2.section-title span:before {
     padding: 20px;
     border: 1px solid #ddd;
 }
-
 .section-experience .experience-list .experience-item span {
     display: inline-block;
     background: var(--mainColor);
@@ -500,7 +500,7 @@ section.section h2.section-title span:before {
 }
 
 .section-experience .experience-list .experience-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
 }
 
@@ -536,7 +536,30 @@ section.section h2.section-title span:before {
         padding: 15px 10px;
     }
 }
-
+.popup-modal .experience-body{
+    padding: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+.popup-modal .experience-body::-webkit-scrollbar {
+	width: 5px;
+	background-color: #F5F5F5;
+}
+.popup-modal .experience-body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	background-color: var(--mainColor);
+}
+.popup-modal .experience-body::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
 .popup-modal .experience-body .experience-banner {
     margin-bottom: 15px;
     display: block;
@@ -546,7 +569,6 @@ section.section h2.section-title span:before {
     padding-bottom: 57.30%;
     overflow: hidden;
 }
-
 .popup-modal .experience-body .experience-banner img {
     position: absolute;
     top: 0;
@@ -562,7 +584,16 @@ section.section h2.section-title span:before {
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
-
+.popup-modal .experience-body .experience-content p {
+    margin-bottom:10px;
+}
+.popup-modal .experience-body .experience-content ul{
+    padding-left: 30px;
+}
+.popup-modal .experience-body .experience-content ul li {
+    list-style: disc outside;
+    margin-bottom: 5px;
+}
 /*==== SECTION SKILLS ====*/
 .section-skills .skills-block{
     display: block;
@@ -926,10 +957,10 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
 @media (max-width: 767px) {
     section.section h2.section-title {
         font-size: 2rem;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
         color: var(--mainColor);
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .section-home .banner-text h3 b {
         color: var(--mainColor);
@@ -941,7 +972,7 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
         width: 100%;
     }
     .section-home .banner-inner .center-picture {
-        max-width: 130px;
+        max-width: 150px;
     }
     .section-home .banner-text h2 {
         font-size: 1rem;
@@ -967,5 +998,10 @@ section.section-feedback .feedback-slider .swiper-pagination-bullet-active {
     .section-home .banner-inner .info-button .btn {
         width: 75%;
         margin-bottom: 15px;
+    }
+}
+@media (max-width: 321px) {
+    .section-home .banner-inner .center-picture {
+        max-width: 130px;
     }
 }

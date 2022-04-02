@@ -9,13 +9,13 @@
     <meta name="robots" content="noodp,index,follow" />
     <link rel="icon" href="./assets/icon/favicon.png" type="image/x-icon" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="About Nhat Bui">
+    <meta property="og:title" content="Giới thiệu về bản thân">
     <meta property="og:image" content="https://nhatbui93.github.io/introduce-vn/assets/image/logo.png">
     <meta property="og:image:secure_url" content="https://nhatbui93.github.io/introduce-vn/assets/image/logo.png">
-    <meta property="og:description" content="The page description is updating.">
+    <meta property="og:description" content="Xin chào mọi người, Mình tên là Bùi Minh Nhật. Mình sống và làm việc tại Tp.HCM. Hiện tại mình đang là lập trình viên Front-end.">
     <meta property="og:url" content="">
-    <meta property="og:site_name" content="About Nhat Bui">
-    <title>About Nhat Bui</title>
+    <meta property="og:site_name" content="Giới thiệu về bản thân">
+    <title>Giới thiệu về bản thân</title>
     <link rel="preload" as="style" type="text/css" href="./assets/css/bootstrap.min.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" type="text/css" href="./assets/css/swiper.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" type="text/css" href="./assets/css/aos.css" onload="this.rel='stylesheet'" />
@@ -37,12 +37,14 @@
     <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/index.css" rel="stylesheet" type="text/css" />
     <link rel="preload" as="script" href="./assets/js/jquery-3.3.1.slim.min.js" />
+    <link rel="preload" as="script" href="./assets/js/lazyload-min.js" />
     <link rel="preload" as="script" href="./assets/js/jquery.appear.js" />
     <link rel="preload" as="script" href="./assets/js/swiper.js" />
     <link rel="preload" as="script" href="./assets/js/aos.js" />
     <link rel="preload" as="script" href="./assets/js/odometer.js" />
     <script src="./assets/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
     <script src="./assets/js/jquery.appear.js" type="text/javascript"></script>
+    <script src="./assets/js/lazyload-min.js" type="text/javascript"></script>
     <script src="./assets/js/swiper.js" type="text/javascript"></script>
     <script src="./assets/js/aos.js" type="text/javascript"></script>
     <script src="./assets/js/odometer.js" type="text/javascript"></script>
@@ -50,8 +52,8 @@
         {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "legalName": "About Nhat Bui",
-            "url": "https://nhatbui93.github.io/introduce-vn/",
+            "legalName": "Giới thiệu về bản thân",
+            "url": "https://nhatbui93.github.io/profile-vn/",
             "contactPoint": [{
                 "@type": "ContactPoint",
                 "telephone": "+84 0366246626",
@@ -64,9 +66,24 @@
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "name": "About Nhat Bui",
-            "url": "https://nhatbui93.github.io/introduce-vn/"
+            "name": "Giới thiệu về bản thân",
+            "url": "https://nhatbui93.github.io/profile-vn/"
         }
+    </script>
+    <script>
+        $(document).ready(function($) {
+            "use strict";
+            awe_lazyloadImage();
+        });
+
+        function awe_lazyloadImage() {
+            var ll = new LazyLoad({
+                elements_selector: ".lazy",
+                load_delay: 100,
+                threshold: 0
+            });
+        }
+        window.awe_lazyloadImage = awe_lazyloadImage;
     </script>
 </head>
 
@@ -90,35 +107,35 @@
                             </div>
                             <ul class="site-nav list-inline d-none d-lg-block">
                                 <li class="nav-item list-inline-item active">
-                                    <a href="#section-home" class="js-anchor-link" title="Trang chủ">Home</a>
+                                    <a href="#section-home" class="js-anchor-link" title="Trang chủ">Trang chủ</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-about" class="js-anchor-link" title="About">About</a>
+                                    <a href="#section-about" class="js-anchor-link" title="Giới thiệu">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-experience" class="js-anchor-link" title="Experience">Experience</a>
+                                    <a href="#section-experience" class="js-anchor-link" title="Kinh nghiệm">Kinh nghiệm</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-skills" class="js-anchor-link" title="My Skills">My Skills</a>
+                                    <a href="#section-skills" class="js-anchor-link" title="Kỹ năng">Kỹ năng</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-portfolio" class="js-anchor-link" title="My Portfolio">My Portfolio</a>
+                                    <a href="#section-portfolio" class="js-anchor-link" title="Dự án">Dự án</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-feedback" class="js-anchor-link" title="Feedback">Feedback</a>
+                                    <a href="#section-feedback" class="js-anchor-link" title="Đánh giá">Đánh giá</a>
                                 </li>
                                 <li class="nav-item list-inline-item">
-                                    <a href="#section-contact" class="js-anchor-link" title="Contact me">Contact me</a>
+                                    <a href="#section-contact" class="js-anchor-link" title="Liên hệ">Liên hệ</a>
                                 </li>
                             </ul>
                             <div class="google-trans d-none d-lg-flex">
-                                <span>LANG: </span>
+                                <span>Ngôn ngữ: </span>
                                 <ul class="list-unstyled ct-language__dropdown">
                                     <li>
-                                        <a href="#" class="lang-en lang-select" title="English"><img src="./assets/icon/uk.png" alt="USA" width="64" height="64"></a>
+                                        <a href="https://nhatbui93.github.io/" class="lang-en lang-select" title="Tiếng Anh"><img src="./assets/icon/uk.png" alt="USA" width="64" height="64"></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="lang-vi lang-select" title="Vietnamese"><img src="./assets/icon/vietnam.png" alt="VIETNAMESE" width="64" height="64"></a>
+                                        <a href="#" class="lang-vi lang-select" title="Tiếng Việt"><img src="./assets/icon/vietnam.png" alt="VIETNAMESE" width="64" height="64"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -142,42 +159,42 @@
             </div>
             <ul class="site-nav site-nav-mb">
                 <li class="nav-item">
-                    <a href="#section-home" class="js-anchor-link active" title="Home">Home</a>
+                    <a href="#section-home" class="js-anchor-link active" title="Trang chủ">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-about" class="js-anchor-link" title="About">About</a>
+                    <a href="#section-about" class="js-anchor-link" title="Giới thiệu">Giới thiệu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-experience" class="js-anchor-link" title="Experience">Experience</a>
+                    <a href="#section-experience" class="js-anchor-link" title="Kinh nghiệm">Kinh nghiệm</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-skills" class="js-anchor-link" title="Skills">My Skills</a>
+                    <a href="#section-skills" class="js-anchor-link" title="Kỹ năng">Kỹ năng</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-portfolio" class="js-anchor-link" title="My Portfolio">My Portfolio</a>
+                    <a href="#section-portfolio" class="js-anchor-link" title="Dự án">Dự án</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-feedback" class="js-anchor-link" title="Feedback">Feedback</a>
+                    <a href="#section-feedback" class="js-anchor-link" title="Đánh giá">Đánh giá</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section-contact" class="js-anchor-link" title="Contact me">Contact me</a>
+                    <a href="#section-contact" class="js-anchor-link" title="Liên hệ">Liên hệ</a>
                 </li>
                 <li class="nav-item">
                     <div class="google-trans d-flex">
-                        <span>LANG: </span>
+                        <span>Ngôn ngữ: </span>
                         <ul class="list-unstyled ct-language__dropdown">
                             <li>
-                                <a href="#" class="lang-en lang-select"><img src="./assets/icon/uk.png" alt="USA" width="64" height="64"></a>
+                                <a href="https://nhatbui93.github.io/" class="lang-en lang-select" title="Tiếng Anh"><img src="./assets/icon/uk.png" alt="USA" width="64" height="64"></a>
                             </li>
                             <li>
-                                <a href="#" class="lang-vi lang-select"><img src="./assets/icon/vietnam.png" alt="VIETNAMESE" width="64" height="64"></a>
+                                <a href="#" class="lang-vi lang-select" title="Tiếng Việt"><img src="./assets/icon/vietnam.png" alt="VIETNAMESE" width="64" height="64"></a>
                             </li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </div>
-        <h1 class="d-none">About Nhat Bui</h1>
+        <h1 class="d-none">Giới thiệu về bản thân</h1>
         <!--Section Home-->
         <section class="section section-home d-flex align-items-center" id="section-home">
             <div class="container">
@@ -185,32 +202,34 @@
                     <div class="col-12 position-static">
                         <div class="banner-inner d-flex align-items-center justify-content-center">
                             <div class="banner-img mb-4 mb-lg-0">
-                                <img class="img-fluid center-picture" src="./assets/image/my_avatar.jpg" alt="Avatar">
+                                <img class="img-fluid center-picture lazy" data-src="./assets/image/my_avatar.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                    alt="Avatar" width="500" height="500">
                             </div>
                             <div class="banner-text ml-lg-5">
-                                <h2>Hi There!</h2>
-                                <h3 class="d-sm-none d-block text-uppercase headline">I'M <b class="is-visible">Nhat Bui Minh</b></h3>
-                                <h3 class="d-sm-block d-none cd-headline clip text-uppercase">I'm
+                                <h2>Xin chào mọi người!</h2>
+                                <h3 class="d-sm-none d-block text-uppercase headline">Mình là <b class="is-visible">Bùi Minh Nhật</b></h3>
+                                <h3 class="d-sm-block d-none cd-headline clip text-uppercase">Mình là
                                     <span class="cd-words-wrapper">
-                                        <b class="is-visible">Nhat Bui Minh</b>
-                                        <b class="is-hidden">a web developer</b>
-                                        <b class="is-hidden">a web designer</b>                   
+                                        <b class="is-visible">Bùi Minh Nhật</b>
+                                        <b class="is-hidden">lập trình viên Front-end</b>
+                                        <b class="is-hidden">nhà phát triển website</b>                   
                                     </span>
                                 </h3>
-                                <p>I'm an e-commerce website designer, developer and implementer for clients with over 3 years of experience. My products emphasize UI/UX and are carefully crafted.</p>
+                                <p>Với hơn 3 năm kinh nghiệm trong việc triển khai, xây dựng và phát triển website chuyên nghiệp, thiết kế chuẩn UI/UX đẹp mắt và chuẩn SEO cho các chủ cửa hàng và công ty.</p>
+                                <p>Phương châm sống và làm việc của mình là <b>"No Pain, No Gain"</b> - Không nỗ lực, không thành công.</p>
                                 <div class="social-links d-flex flex-wrap">
-                                    <a href="https://www.facebook.com/nhat.bui.105" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com/?lang=vi" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/nhat.bui.105" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/?lang=vi" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
                                 </div>
                                 <div class="info-button">
-                                    <a href="#section-about" class="btn btn-secondary js-anchor-link about-btn mr-sm-3"><span><i class="fa fa-user mr-2"></i>More about me</span></a>
-                                    <a href="#section-portfolio" class="btn btn-primary js-anchor-link portfolio-btn mb-0"><span><i class="fa fa-rocket mr-2"></i>My portfolio</span></a>
+                                    <a href="#section-about" class="btn btn-secondary js-anchor-link about-btn mr-sm-3" title="Giới thiệu bản thân"><span><i class="fa fa-user mr-2"></i>Giới thiệu bản thân</span></a>
+                                    <a href="#section-portfolio" class="btn btn-primary js-anchor-link portfolio-btn mb-0" title="Các dự án nổi bật"><span><i class="fa fa-rocket mr-2"></i>Các dự án nổi bật</span></a>
                                 </div>
                             </div>
                         </div>
-                        <a href="#section-about" class="js-anchor-link scroll-down-arrow-anchor">
+                        <a href="#section-about" class="js-anchor-link scroll-down-arrow-anchor" title="Nội dung tiếp theo">
                             <div class="scroll-down-arrow smooth-scroll-down about-btn d-none d-lg-block">
                             </div>
                         </a>
@@ -226,7 +245,8 @@
                         <div class="image-frame">
                             <div class="image-block">
                                 <div class="img-fix">
-                                    <img class="img-fluid w-100" src="./assets/image/image-about.jpg" alt="about">
+                                    <img class="img-fluid w-100 lazy" data-src="./assets/image/image-about.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="about">
                                 </div>
                                 <div class="movable-border">
                                     <span></span>
@@ -236,18 +256,20 @@
                     </div>
                     <div class="col-right col-lg-7 col-md-12 col-xs-12 col-12" data-aos="fade-left">
                         <h2 class="section-title">
-                            <span>About</span> me
+                            <span>Giới thiệu</span> bản thân
                         </h2>
                         <div class="about-block">
-                            <h3>My name is Bui Minh Nhat,</h3>
+                            <h3>Mình tên là Bùi Minh Nhật,</h3>
                             <div class="about-content">
-                                <p>I'm 29 years old and I'm from Ho Chi Minh City.</p>
-                                <p>I graduated from ITC, majoring in Communication and Computer Networking.</p>
-                                <p>In 2018, I started working as a Website deployment staff / at Sapo Technology JSC. My main job is to receive customer requests, deploy, develop features / and edit website interfaces for customers with / HTML, CSS/SCSS,
-                                    Bootstrap, Javascript, Jquery, Ajax, Json and open source liquid.</p>
-                                <p>I’m a passionate, patient, and constantly learning person. In addition, I’m so careful and thoughtful when I’m working, so everyone in my team considers me as a highly efficient and hard-working person. However, it makes
-                                    me spend more time deploying websites for clients.</p>
-                                <p>My short-term goal is to strengthen my background knowledge, learn a front-end framework, Angular JS, and become a Junior Developer in a year.</p>
+                                <p>Mình sinh vào ngày 12/01/1993. Hiện mình đang sống và làm việc tại Tp.Hồ Chí Minh.</p>
+                                <p>Mình từng tốt nghiệp Trường Cao Đẳng Công Nghệ Thông Tin Tp.HCM (ITC). Chuyên ngành Truyền thông và mạng máy tính.</p>
+                                <p>Sau khi tốt nghiệp, mình bắt đầu công việc tại công ty Cổ phần VNG Corp với vị trí là Nhân viên hỗ trợ kỹ thuật online. Trong thời gian làm việc tại đây. Mình có cơ hội tiếp xúc và bắt đầu học về lập trình web front-end.</p>
+                                <p>Hiện tại, công việc của mình là lập trình viên Front-end, Mình triển khai các dự án về website thương mại điện tử cho các chủ cửa hàng, công ty. Xây dựng các tính năng front-end của website. Đảm bảo website thiết kế chuẩn
+                                    UI/UX đẹp mắt và chuẩn SEO.</p>
+                                <p>Mình là một người nhiệt tình, kiên nhẫn và không ngừng học hỏi. Ngoài ra trong công việc mình là 1 người rất tỉ mỉ, cẩn thận nên được mọi người trong team nhận xét mình làm việc với thái độ nghiêm túc và mang lại hiệu quả
+                                    cao cho công việc. </p>
+                                <p>Trong năm 2022 này, mục tiêu của mình đặt ra là "<b>BỨC PHÁ GIỚI HẠN</b>" bản thân. Mở rộng thêm kiến thức lập trình, thành thạo 1 framework ReactJS/AngularJS để xây dựng Web Application. Và kết quả cuối cùng hướng đến
+                                    là trở thành Junior developer trong vòng 1 năm.</p>
                             </div>
                             <div class="about-button">
                                 <a href="https://www.dropbox.com/home" class="btn btn-primary mb-0" target="_blank"><span><i class="fas fa-download"></i> Download CV</span></a>
@@ -256,29 +278,29 @@
                     </div>
                 </div>
             </div>
-            <div class="block-counter" id="counter" >
+            <div class="block-counter" id="counter">
                 <div class="container">
                     <div class="row counter-area">
-                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="0">
-                                <i class="fas fa-briefcase d-block mb-2"></i>
-                                <span class="odometer" data-count="3.5">00</span>
-                                <h4>Years of experience</h4>
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="50">
-                                <i class="fas fa-code d-block mb-2"></i>
-                                <span class="odometer" data-count="1550">00</span>
-                                <h4>Websites deployed</h4>
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="100">
-                                <i class="fas fa-handshake d-block mb-2"></i>
-                                <span class="odometer" data-count="1442">00</span>
-                                <h4>Happy clients</h4>
-                            </div>
-                            <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="150">
-                                <i class="fas fa-award d-block mb-2"></i>
-                                <span class="odometer" data-count="10">00</span>
-                                <h4>Awards achieved</h4>
-                            </div>
+                        <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="0">
+                            <i class="fas fa-briefcase d-block mb-2"></i>
+                            <span class="odometer" data-count="3.5">00</span>
+                            <h4>Năm kinh nghiệm</h4>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="50">
+                            <i class="fas fa-code d-block mb-2"></i>
+                            <span class="odometer" data-count="1550">00</span>
+                            <h4>Số site đã triển khai</h4>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-handshake d-block mb-2"></i>
+                            <span class="odometer" data-count="1042">00</span>
+                            <h4>Khách hàng hài lòng</h4>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="150">
+                            <i class="fas fa-award d-block mb-2"></i>
+                            <span class="odometer" data-count="10">00</span>
+                            <h4>Giải thưởng đạt được</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,7 +311,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="section-title">
-                            My <span>Experience</span>
+                            <span>Kinh nghiệm</span> làm việc
                         </h2>
                         <div class="experience-list">
                             <div class="row">
@@ -298,19 +320,20 @@
                                         <i class="fas fa-graduation-cap"></i>
                                         <div class="content">
                                             <span>11/2014</span>
-                                            <h3>front-end development</h3>
-                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                            <a href="javascript:void(0);" class="see-detail" title="See details">See details</a>
+                                            <h3>Tốt nghiệp Trường Cao Đẳng Công Nghệ Thông Tin Tp.Hồ Chí Minh (ITC)</h3>
+                                            <p>Sau hơn 3 năm học tập tại trường Cao đẳng ITC. Vào 11/2014, mình chính thức tốt nghiệp cử nhân công nghệ thông tin chuyên ngành Truyền thông và mạng máy tính.</p>
+                                            <a href="javascript:void(0);" class="see-detail" title="Xem chi tiết">Xem chi tiết</a>
                                             <script type="text/x-custom-template" data-modal="detail-experience">
                                                 <div class="experience-body d-block w-100">
                                                     <div class="experience-banner">
-                                                        <img src="./assets/image/banner-experience/exp-01.jpg" class="img-fluid" alt="front-end development">
+                                                        <a href="./assets/image/banner-experience/exp-01.jpg" title="Xem ảnh"><img data-src="./assets/image/banner-experience/exp-01.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                class="img-fluid lazy" alt="Tốt nghiệp Trường Cao Đẳng Công Nghệ Thông Tin Tp.Hồ Chí Minh"></a>
                                                     </div>
-                                                    <h3>front-end development</h3>
+                                                    <h3>Tốt nghiệp Trường Cao Đẳng Công Nghệ Thông Tin Tp.Hồ Chí Minh (ITC)</h3>
                                                     <div class="experience-content">
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
+                                                        <p>- Sau khi tốt nghiệp cấp THPT. Mình đã trúng tuyển vào trường Cao Đẳng Công Nghệ Thông Tin Tp.Hồ Chí Minh (ITC) vào năm 2011. Trở thành tân sinh viên khóa 11 chuyên ngành Mạng máy tính.</p>
+                                                        <p>- Hơn 3 năm học tập tại trường Cao đẳng ITC. Vào 11/2014, mình chính thức tốt nghiệp cử nhân công nghệ thông tin chuyên ngành Truyền thông và mạng máy tính.</p>
+                                                        <p>- Cũng trong thời gian này mình đã hoàn thành bài kiểm tra tiếng Anh giao tiếp quốc tế TOEIC với tổng điểm số là 375 score.</p>
                                                     </div>
                                                 </div>
                                             </script>
@@ -322,23 +345,30 @@
                                         <i class="fas fa-fax"></i>
                                         <div class="content">
                                             <span>2015 - 2017</span>
-                                            <h3>front-end development 2</h3>
-                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores
-                                                Ipsa? Error, Debitis Ullam.
+                                            <h3>Nhân viên Hỗ trợ kỹ thuật online - Công ty cổ phần VNG</h3>
+                                            <p>
+                                                Sau khi tốt nghiệp, vào năm 2015 mình bắt đầu công việc là nhân viên tổng đài và hỗ trợ kỹ thuật online tại cổng csm.zing.vn - thuộc team OS Công ty cổ phần VNG.
                                             </p>
-                                            <a href="javascript:void(0);" class="see-detail" title="See details">See details</a>
+                                            <a href="javascript:void(0);" class="see-detail" title="Xem chi tiết">Xem chi tiết</a>
                                             <script type="text/x-custom-template" data-modal="detail-experience">
                                                 <div class="experience-body d-block w-100">
                                                     <div class="experience-banner">
-                                                        <img src="./assets/image/banner-experience/exp-02.jpg" class="img-fluid" alt="front-end development 2">
+                                                        <a href="./assets/image/banner-experience/exp-02.jpg" title="Xem ảnh"><img data-src="./assets/image/banner-experience/exp-02.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                class="img-fluid lazy" alt="Nhân viên Hỗ trợ kỹ thuật online - Công ty cổ phần VNG"></a>
                                                     </div>
-                                                    <h3>front-end development 2</h3>
+                                                    <h3>Nhân viên Hỗ trợ kỹ thuật online - Công ty cổ phần VNG</h3>
                                                     <div class="experience-content">
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
+                                                        <p>Sau khi tốt nghiệp, vào năm 2015 mình bắt đầu công việc là nhân viên tổng đài và hỗ trợ kỹ thuật online tại cổng csm.zing.vn - thuộc OS Team. Công việc chính của mình là:</p>
+                                                        <ul>
+                                                            <li>Tiếp nhận yêu cầu khách hàng từ bộ phận Callcenter.</li>
+                                                            <li>Hỗ trợ khách hàng qua các công cụ remote từ xa (Teamview, Ultraview,...)</li>
+                                                            <li>Hỗ trợ cho các Game room trên toàn quốc.</li>
+                                                            <li>Khắc phục các lỗi phát sinh trong quá trình sử dụng trên Windows, lỗi phần mềm, Game,...</li>
+                                                            <li>Triển khai đồng bộ hệ thống mạng cho phòng máy.</li>
+                                                            <li>Debug lỗi trên hệ thống Windows, Server, Linux, Game của khách hàng.</li>
+                                                            <li>Triển khai các ứng dụng Windows, CSM, Bootrom Linux, Windows Server trong phòng máy.</li>
+                                                            <li>Tổng hợp và báo cáo cấp trên các vấn đề của khách hàng.</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </script>
@@ -350,22 +380,28 @@
                                         <i class="fas fa-briefcase"></i>
                                         <div class="content">
                                             <span>2017 - 2018</span>
-                                            <h3>front-end development</h3>
-                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.
+                                            <h3>Nhân viên Dịch vụ khách hàng phần mềm KiotViet - Công ty Cổ phần Phần mềm Citigo</h3>
+                                            <p>
+                                                Tháng 08/2017 mình trở thành nhân viên dịch vụ khách hàng chi nhánh Sài Gòn cho phần mềm quản lý bán hàng KiotViet tại công ty Cổ phần Phần mềm Citigo. 
                                             </p>
-                                            <a href="javascript:void(0);" class="see-detail" title="See details">See details</a>
+                                            <a href="javascript:void(0);" class="see-detail" title="Xem chi tiết">Xem chi tiết</a>
                                             <script type="text/x-custom-template" data-modal="detail-experience">
                                                 <div class="experience-body d-block w-100">
                                                     <div class="experience-banner">
-                                                        <img src="./assets/image/banner-experience/exp-03.jpg" class="img-fluid" alt="front-end development 2">
+                                                        <a href="./assets/image/banner-experience/exp-03.jpg" title="Xem ảnh"><img data-src="./assets/image/banner-experience/exp-03.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="img-fluid lazy" alt="Nhân viên dịch vụ khách hàng - Công ty Cổ phần Phần mềm Citigo"></a>
                                                     </div>
-                                                    <h3>front-end development 3</h3>
+                                                    <h3>Nhân viên Dịch vụ khách hàng phần mềm KiotViet - Công ty Cổ phần Phần mềm Citigo</h3>
                                                     <div class="experience-content">
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
+                                                        <p>
+                                                            Tháng 08/2017 mình trở thành nhân viên dịch vụ khách hàng chi nhánh Sài Gòn cho phần mềm quản lý bán hàng KiotViet tại công ty Cổ phần Phần mềm Citigo. 
+                                                        </p>
+                                                        <ul>
+                                                            <li>Tiếp nhận cuộc gọi đến tổng đài và các kênh dịch vụ khách hàng, ghi nhận và xử lý các yêu cầu từ khách hàng.</li>
+                                                            <li>Ghi nhận khiếu nại của khách hàng và xử lý theo đúng qui trình.</li>
+                                                            <li>Cung cấp thông tin, giải đáp thắc mắc và hướng dẫn khách hàng về tính năng sản phẩm và cách sử dụng phần mềm.</li>
+                                                            <li>Hỗ trợ các vấn đề về kỹ thuật, cài đặt phần mềm, phần cứng qua các công cụ remote từ xa (Teamview, Ultraview,...) cho khách hàng.</li>
+                                                            <li>Ghi nhận và Debug lỗi về phần mềm, tổng hợp các vấn đề và ghi nhận góp ý của khách hàng cho bộ phận phát triển phần mềm.</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </script>
@@ -377,22 +413,26 @@
                                         <i class="fas fa-laptop-code"></i>
                                         <div class="content">
                                             <span>2018 - 2022</span>
-                                            <h3>front-end development</h3>
-                                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.
+                                            <h3>Nhân viên kỹ thuật triển khai website - Công ty cổ phần Công nghệ Sapo</h3>
+                                            <p>
+                                                Tháng 09/2018 mình đã apply vào vị trí Nhân viên kỹ thuật triển khai website tại Công ty cổ phần Công nghệ Sapo. Và con đường lập trình front-end của mình bắt đầu từ đây.
                                             </p>
-                                            <a href="javascript:void(0);" class="see-detail" title="See details">See details</a>
+                                            <a href="javascript:void(0);" class="see-detail" title="Xem chi tiết">Xem chi tiết</a>
                                             <script type="text/x-custom-template" data-modal="detail-experience">
                                                 <div class="experience-body d-block w-100">
                                                     <div class="experience-banner">
-                                                        <img src="./assets/image/banner-experience/exp-04.jpg" class="img-fluid" alt="front-end development 2">
+                                                         <a href="./assets/image/banner-experience/exp-04.jpg" title="Xem ảnh"><img data-src="./assets/image/banner-experience/exp-04.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" class="img-fluid lazy" alt="Nhân viên kỹ thuật triển khai website - Công ty cổ phần Công nghệ Sapo"></a>
                                                     </div>
-                                                    <h3>front-end development 4</h3>
+                                                    <h3>Nhân viên kỹ thuật triển khai website - Công ty cổ phần Công nghệ Sapo</h3>
                                                     <div class="experience-content">
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
-                                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores Ipsa? Error, Debitis Ullam.</p>
+                                                        <p>Tháng 09/2018 mình đã apply vào vị trí Nhân viên kỹ thuật triển khai website tại Công ty cổ phần Công nghệ Sapo. Công việc chính của mình tại vị trí này là:</p>
+                                                        <ul>
+                                                           <li>Tiếp nhận yêu cầu triển khai giao diện HTML/CSS, Javascript website của khách hàng & tiến hành chỉnh sửa, cắt giao diện trên hệ thống themes có sẵn của Sapo hoặc theo layout thiết kế từ PSD/Figma.</li>
+                                                           <li>Nghiên cứu, tìm hiểu các công nghệ phát triển Web mới để áp dụng cải tiến sản phẩm.</li>
+                                                           <li>Cung cấp thông tin, giải đáp thắc mắc và tư vấn giải pháp cho kinh doanh, điều hành, khách hàng các vấn đề về giao diện, chức năng website.</li>
+                                                           <li>Hỗ trợ xử lý các ticket yêu cầu nội bộ, nguyên cứu, báo giá các tính năng chuyên biệt của khách hàng.</li>
+                                                           <li>Thực hiện các công việc khác trong chuyên môn theo sự phân công của trưởng bộ phận.</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </script>
@@ -411,7 +451,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="section-title">
-                            My <span>Skills</span>
+                           Các <span>Kỹ năng</span>
                         </h2>
                     </div>
                     <div class="col-12 col-md-12 col-lg-6 col-item" data-aos="fade-right">
@@ -421,12 +461,12 @@
                             </h3>
                             <div class="skill-content">
                                 <ul>
-                                    <li><i class="fas fa-check-circle"></i> Knowledge of website development using HTML, CSS/SCSS, Bootstrap, JavaScript, jQuery, Ajax, JSON.</li>
-                                    <li><i class="fas fa-check-circle"></i> Experienced in developing responsive websites, mobile devices on many different browser platforms.</li>
-                                    <li><i class="fas fa-check-circle"></i> Experience working on Libraries, frameworks (Bootstrap, jQuery, Lazyload, ...)</li>
-                                    <li><i class="fas fa-check-circle"></i> Knowledge of Onsite/Onpage SEO, Code Optimization, PageSpeed.</li>
-                                    <li><i class="fas fa-check-circle"></i> Having knowledge and working with Photoshop, Figma.</li>
-                                    <li><i class="fas fa-check-circle"></i> Ability to build website layouts from the design department's PSD interface file. And ensure high UI/UX for the website.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có kiến thức và phát triển website bằng các ngôn ngữ HTML, CSS/SCSS, Bootstrap, JavaScript, jQuery, Ajax, JSON và mã nguồn mở Liquid.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có kinh nghiệm phát triển website responsive, thiết bị mobile trên nhiều nền tảng trình duyệt khác nhau.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có kinh nghiêm làm việc trên các Thư viện, framework (Bootstrap, jquery, Responsive, Lazyload ...)</li>
+                                    <li><i class="fas fa-check-circle"></i> Kiến thức hiểu biết về SEO Onsite/Onpage, Tối ưu code, PageSpeed.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có kiến thức và làm việc với Photoshop, Figma.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng xây dựng bố cục website từ file giao diện PSD/Figma của bộ phận thiết kế. Và đảm bảo UI/UX cho trang web.</li>
                                 </ul>
                             </div>
                         </div>
@@ -438,11 +478,12 @@
                             </h3>
                             <div class="skill-content">
                                 <ul>
-                                    <li><i class="fas fa-check-circle"></i> Have good communication skills.</li>
-                                    <li><i class="fas fa-check-circle"></i> Can work independently or in groups.</li>
-                                    <li><i class="fas fa-check-circle"></i> Enthusiasm, patience, high sense of responsibility at work.</li>
-                                    <li><i class="fas fa-check-circle"></i> Able to work under high pressure.</li>
-                                    <li><i class="fas fa-check-circle"></i> Always learn and improve new knowledge and skills.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng giao tiếp/giao tiếp khách hàng tốt.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng làm việc độc lập hoặc theo nhóm.</li>
+                                    <li><i class="fas fa-check-circle"></i> Nhiệt tình, kiên nhẫn, có tinh thần trách nhiệm cao và luôn làm việc với thái độ nghiêm túc.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng chịu áp lực cao trong công việc.</li>
+                                    <li><i class="fas fa-check-circle"></i> Luôn không ngừng học hỏi, nỗ lực và nâng cao kiến thức, kỹ năng mới cho bản thân.</li>
+                                    <li><i class="fas fa-check-circle"></i> Không ngại khó. Luôn tìm cách giải quết vấn đề cũng như luôn chia sẻ, tham khảo các skill/tip với mọi người trong team.</li>
                                 </ul>
                             </div>
                         </div>
@@ -457,16 +498,17 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="section-title">
-                            My <span>Portfolio</span>
+                            Các <span>dự án</span>
                         </h2>
-                        <p class="desc">Some typical projects that I have implemented for clients.</p>
+                        <p class="desc">Dưới đây là một số dự án website tiêu biểu mà mình đã triển khai cho khách hàng.</p>
                     </div>
                     <div class="project-list col-12">
                         <div class="row">
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="0">
                                 <a href="https://bean-jewelry.mysapo.net/" target="_blank" title="Bean Jewelry Theme">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-01.png" alt="Bean Jewelry Theme" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-01.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Bean Jewelry Theme"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Bean Jewelry Theme
@@ -476,7 +518,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="50">
                                 <a href="https://longtientich.vn/" target="_blank" title="Long Tiên Tích">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-02.png" alt="Long Tiên Tích" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-02.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Long Tiên Tích"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Long Tiên Tích
@@ -486,7 +529,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="100">
                                 <a href="https://adcbook.mysapo.net/" target="_blank" title="ADC book">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-03.png" alt="ADC book" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-03.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="ADC book"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         ADC book
@@ -496,7 +540,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="150">
                                 <a href="https://shop.mutosi.com/" target="_blank" title="Shop Mutosi">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-04.png" alt="Shop Mutosi" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-04.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Shop Mutosi"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Shop Mutosi
@@ -506,7 +551,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="200">
                                 <a href="https://hapa.vn/" target="_blank" title="Điện máy HAPA">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-05.png" alt="Điện máy HAPA" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-05.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Điện máy HAPA"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Điện máy HAPA
@@ -516,7 +562,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="250">
                                 <a href="https://decoviet.com/" target="_blank" title="Nhà Decor">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-06.png" alt="Nhà Decor" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-06.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Nhà Decor"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Nhà Decor
@@ -526,7 +573,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="300">
                                 <a href="https://thekindness.vn/" target="_blank" title="THE KINDNESS">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-07.png" alt="THE KINDNESS" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-07.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="THE KINDNESS"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         THE KINDNESS
@@ -536,7 +584,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item" data-aos="fade-up" data-aos-delay="350">
                                 <a href="https://fapas.vn/" target="_blank" title="Thời trang Fapas">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-08.png" alt="Thời trang Fapas" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-08.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Thời trang Fapas"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Thời trang Fapas
@@ -546,7 +595,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="0">
                                 <a href="https://fernweh.vn/" target="_blank" title="FW.GOODs">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-09.png" alt="FW.GOODs" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-09.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="FW.GOODs"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         FW.GOODs
@@ -556,7 +606,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="50">
                                 <a href="https://kitawa.vn/" target="_blank" title="Đèn năng lượng Kitawa">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-10.png" alt="Đèn năng lượng Kitawa" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-10.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Đèn năng lượng Kitawa"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Đèn năng lượng Kitawa
@@ -566,7 +617,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="100">
                                 <a href="https://bietthunovaworld.vn/" target="_blank" title="Novaworld Phan Thiết">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-11.png" alt="Novaworld Phan Thiết" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-11.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Novaworld Phan Thiết"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Novaworld Phan Thiết
@@ -576,7 +628,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="150">
                                 <a href="https://www.namiqos.com.vn/" target="_blank" title="IQOS NAM">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-12.png" alt="IQOS NAM" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-12.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="IQOS NAM"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         IQOS NAM
@@ -586,7 +639,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="200">
                                 <a href="https://grandsportvietnam.com/" target="_blank" title="Grand Sport Việt Nam">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-13.png" alt="Grand Sport Việt Nam" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-13.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Grand Sport Việt Nam"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Grand Sport Việt Nam
@@ -596,7 +650,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="250">
                                 <a href="https://onebee.vn/" target="_blank" title="ONEBEE.VN">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-14.png" alt="ONEBEE.VN" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-14.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="ONEBEE.VN"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         ONEBEE.VN
@@ -606,7 +661,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="300">
                                 <a href="https://noiynu.com/" target="_blank" title="Nội Y cao cấp Samuel">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-15.png" alt="Nội Y cao cấp Samuel" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-15.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Nội Y cao cấp Samuel"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Nội Y cao cấp Samuel
@@ -616,7 +672,8 @@
                             <div class="col-6 col-md-6 col-lg-3 project-item d-none" data-aos="fade-up" data-aos-delay="350">
                                 <a href="https://asanzo.vn/" target="_blank" title="Asanzo Việt Nam">
                                     <div class="image-box">
-                                        <img src="assets/image/image-projects/project-16.png" alt="Asanzo Việt Nam" class="img-fluid">
+                                        <img data-src="assets/image/image-projects/project-16.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="Asanzo Việt Nam"
+                                            class="img-fluid lazy">
                                     </div>
                                     <h3 class="title-project text-center">
                                         Asanzo Việt Nam
@@ -624,8 +681,8 @@
                                 </a>
                             </div>
                             <div class="col-12 show-more-project text-center">
-                                <a href="javascript:void(0);" title="View more" class="btn btn-primary">
-                                   <span>View more</span>
+                                <a href="javascript:void(0);" title="Xem thêm" class="btn btn-primary">
+                                    <span>Xem thêm</span>
                                 </a>
                             </div>
                         </div>
@@ -639,79 +696,77 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="section-title">
-                            <span>Feedback</span>
+                            <span>Đánh giá</span> về mình
                         </h2>
-                        <p class="desc">What do my managers and colleagues say about me?</p>
+                        <p class="desc">Các quản lý và đồng nghiệp đã có những nhận xét gì khi làm việc với mình?</p>
                     </div>
                     <div class="col-12">
                         <div class="feedback-slider swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                                 <div class="swiper-slide testi-item">
-                                    <img src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic">
+                                    <img data-src="https://sebastian-portfolio-123.herokuapp.com/assets/images/Testimonials/pic-5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                        alt="Testimonial-Pic" class="img-fluid lazy">
                                     <div class="intro">
                                         <h3>samit patel</h3>
                                         <h5>graphic designer</h5>
                                     </div>
                                     <p class="comment">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Sit ipsa quos ut cupiditate ex atque.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quos ut cupiditate ex atque.
                                     </p>
                                 </div>
                             </div>
@@ -727,23 +782,23 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="section-title">
-                            <span>Contact</span> me
+                            <span>Liên hệ </span>
                         </h2>
                         <div class="contact-body">
                             <div class="row">
                                 <div class="col-12 col-lg-6 col-left" data-aos="fade-right">
                                     <div class="contact-info">
-                                        <h3>Get in touch with me</h3>
-                                        <p>Please contact me from the following information:</p>
+                                        <h3>Thông tin liên hệ</h3>
+                                        <p>Các bạn có thể liên hệ mình qua các thông tin sau:</p>
                                         <div class="info-item">
-                                            <h4>Address:</h4>
+                                            <h4>Địa chỉ:</h4>
                                             <div class="detail">
                                                 <i class="fas fa-map-marker-alt"></i>
-                                                <a href="https://goo.gl/maps/m2mehZPviBiHwFNL7" title="Go to map" taget="_blank">57 Do Doc Loc Str, Tan Quy Ward, Tan Phu District, HCMC</a>
+                                                <a href="https://goo.gl/maps/m2mehZPviBiHwFNL7" title="Xem bản đồ" target="_blank">57 Đô Đốc Lộc, Phường Tân Quý, Quận Tân Phú, Tp.HCM</a>
                                             </div>
                                         </div>
                                         <div class="info-item">
-                                            <h4>Phone:</h4>
+                                            <h4>Điện thoại:</h4>
                                             <div class="detail">
                                                 <i class="fas fa-phone"></i>
                                                 <a href="tel:0366246626" title="Phone: 036.6246.626">036.6246.626</a>
@@ -774,24 +829,24 @@
                                 </div>
                                 <div class="col-12 col-lg-6 col-right" data-aos="fade-left">
                                     <div class="contact-form">
-                                        <h3>Or send messenger</h3>
-                                        <p>Please enter required fields (*)</p>
+                                        <h3>Hoặc gửi tin nhắn</h3>
+                                        <p>Vui lòng nhập các trường bắt buộc (*)</p>
                                         <form id="form-messenger" target="_self" onsubmit="" action="javascript: postToGoogle()">
-                                            <input type="text" value="" placeholder="Full name (*)" name="fullName" id="contactFormName" required>
+                                            <input type="text" value="" placeholder="Học và tên (*)" name="fullName" id="contactFormName" required>
                                             <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" placeholder="Email (*)" name="email" id="contactFormEmail" required>
-                                            <input type="text" value="" placeholder="Subject" name="subject" id="contactFormSubject">
-                                            <textarea name="messenger" id="contactFormMesseger" placeholder="Message (*)" cols="30" rows="3" required></textarea>
+                                            <input type="text" value="" placeholder="Chủ đề" name="subject" id="contactFormSubject">
+                                            <textarea name="messenger" id="contactFormMesseger" placeholder="Nội dung (*)" cols="30" rows="3" required></textarea>
                                             <div class="group-submit">
                                                 <span id="sc_form" class="alert alert-success" style="display: none;"></span>
                                                 <button id="send_messenger" type="submit">
-                                                    Send message
+                                                   Gửi thông tin
                                                 </button>
                                             </div>
                                         </form>
                                     </div>
                                     <script>
                                         function postToGoogle() {
-                                            $('#sc_form').removeClass('alert-success').addClass('alert-info').show().text('Please wait...');
+                                            $('#sc_form').removeClass('alert-success').addClass('alert-info').show().text('Vui lòng chờ giây lát...');
                                             var field1 = $("#contactFormName").val();
                                             var field2 = $('#contactFormEmail').val();
                                             var field3 = $('#contactFormSubject').val();
@@ -809,7 +864,7 @@
                                                 statusCode: {
                                                     0: function() {
                                                         setTimeout(function() {
-                                                            $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Your information has been sent successfully.');
+                                                            $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Thông tin của bạn đã được gửi thành công.');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)
@@ -817,7 +872,7 @@
                                                     },
                                                     200: function() {
                                                         setTimeout(function() {
-                                                            $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Your information has been sent successfully.');
+                                                            $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Thông tin của bạn đã được gửi thành công.');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)
@@ -840,19 +895,19 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="social">
-                            <a href="https://www.facebook.com/nhat.bui.105" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/?lang=vi" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/nhat.bui.105" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/?lang=vi" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" title="Instargam"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
                         </div>
                         <div class="copyright">
-                            <p>Created by <b>NhatBui</b> | all rights reserved</p>
+                            <p>Website được tạo bởi <b>NhatBui</b</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="back-to-top" title="Back to top">
-                <img src="/assets/icon/up-arrow.svg" alt="Back to top" width="20" height="20">
+            <div class="back-to-top" title="Lên đầu trang">
+                <img src="/assets/icon/up-arrow.svg" alt="Lên đầu trang" width="20" height="20">
             </div>
         </footer>
         <!--Poup modal-->

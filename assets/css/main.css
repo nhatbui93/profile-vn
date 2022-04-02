@@ -135,7 +135,7 @@ ol.alpha {
     width: 50vw;
     background: #fff;
     border-radius: 10px;
-    height: 80vh;
+    height: 90vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -144,9 +144,11 @@ ol.alpha {
 }
 .popup-modal .close-modal {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    display: inline-block;
+    top: -15px;
+    right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 34px;
     height: 34px;
     line-height: 30px;
@@ -172,25 +174,6 @@ ol.alpha {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    overflow-y: auto;
-}
-.popup-modal .modal-body::-webkit-scrollbar {
-	width: 5px;
-	background-color: #F5F5F5;
-}
-.popup-modal .modal-body::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-    box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	background-color: var(--mainColor);
-}
-.popup-modal .modal-body::-webkit-scrollbar-track  {
-    box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-	border-radius: 5px;
-	background-color: #F5F5F5;
 }
 
 @media (max-width: 991px) {
@@ -203,6 +186,9 @@ ol.alpha {
     .popup-modal {
         width: calc(100% - 30px);
         height: 80vh;
+    }
+    .popup-modal .modal-body {
+        padding:  10px !important;
     }
 }
 /*==== HEADER ====*/
@@ -301,6 +287,8 @@ header.header.sticky {
     width: auto;
     text-align: right;
     margin-left: 10px;
+    position: relative;
+    bottom: 1px;
 }
 
 .google-trans span {
@@ -489,7 +477,7 @@ footer.footer .copyright b {
 footer.footer .back-to-top {
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
     font-size: 14px;
     cursor: pointer;
     color: #fff;
