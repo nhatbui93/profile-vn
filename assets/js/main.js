@@ -108,11 +108,11 @@ var swiper = new Swiper(".feedback-slider", {
         },
 
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
 
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 1,
         },
     },
 

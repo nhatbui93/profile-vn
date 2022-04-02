@@ -752,6 +752,7 @@ section.section-feedback .feedback-slider .testi-item {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    background: #f1f1f1;
     padding: 25px 20px;
     flex-shrink: 0;
     width: 100%;
@@ -771,7 +772,7 @@ section.section-feedback .feedback-slider .testi-item img {
     border: 5px solid var(--mainColor);
 }
 section.section-feedback .feedback-slider .testi-item .intro {
-    margin: 10px 0;
+    margin: 10px 0 15px;
 }
 section.section-feedback .feedback-slider .testi-item .intro h3 {
     font-size: 1.1rem;
@@ -791,8 +792,7 @@ section.section-feedback .feedback-slider .testi-item p {
 section.section-feedback .feedback-slider .testi-item p:before{
     content: '';
     position: absolute;
-    z-index: -1;
-    top: -11px;
+    top: -18px;
     left: 5px;
     width: 25px;
     height: 25px;
