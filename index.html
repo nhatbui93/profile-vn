@@ -287,12 +287,12 @@
                             <h4>Năm kinh nghiệm</h4>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="50">
-                            <i class="fas fa-code d-block mb-2"></i>
+                            <i class="fas fa-globe d-block mb-2"></i>
                             <span class="odometer" data-count="1550">00</span>
                             <h4>Số site đã triển khai</h4>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6 text-center count-item" data-aos="fade-up" data-aos-delay="100">
-                            <i class="fas fa-handshake d-block mb-2"></i>
+                            <i class="fas fa-thumbs-up d-block mb-2"></i>
                             <span class="odometer" data-count="1042">00</span>
                             <h4>Khách hàng hài lòng</h4>
                         </div>
@@ -457,7 +457,7 @@
                     <div class="col-12 col-md-12 col-lg-6 col-item" data-aos="fade-right">
                         <div class="skills-block">
                             <h3 class="title-skills">
-                                <i class="fas fa-code"></i> Kỹ năng
+                                <i class="fas fa-laptop-code"></i> Kỹ năng
                             </h3>
                             <div class="skill-content">
                                 <ul>
@@ -466,7 +466,7 @@
                                     <li><i class="fas fa-check-circle"></i> Có kinh nghiêm làm việc trên các Thư viện, framework (Bootstrap, jquery, Responsive, Lazyload ...)</li>
                                     <li><i class="fas fa-check-circle"></i> Kiến thức hiểu biết về SEO Onsite/Onpage, Tối ưu code, PageSpeed.</li>
                                     <li><i class="fas fa-check-circle"></i> Có kiến thức và làm việc với Photoshop, Figma.</li>
-                                    <li><i class="fas fa-check-circle"></i> Có khả năng xây dựng bố cục website từ file giao diện PSD/Figma của bộ phận thiết kế. Và đảm bảo UI/UX cho trang web.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng xây dựng bố cục website từ file giao diện PSD/Figma của bộ phận thiết kế. Và đảm bảo tính UI/UX cho trang web.</li>
                                 </ul>
                             </div>
                         </div>
@@ -478,8 +478,8 @@
                             </h3>
                             <div class="skill-content">
                                 <ul>
-                                    <li><i class="fas fa-check-circle"></i> Có khả năng giao tiếp/giao tiếp khách hàng tốt.</li>
-                                    <li><i class="fas fa-check-circle"></i> Có khả năng làm việc độc lập hoặc theo nhóm.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng giao tiếp với khách hàng tốt.</li>
+                                    <li><i class="fas fa-check-circle"></i> Có khả năng làm việc độc lập và làm việc theo nhóm.</li>
                                     <li><i class="fas fa-check-circle"></i> Nhiệt tình, kiên nhẫn, có tinh thần trách nhiệm cao và luôn làm việc với thái độ nghiêm túc.</li>
                                     <li><i class="fas fa-check-circle"></i> Có khả năng chịu áp lực cao trong công việc.</li>
                                     <li><i class="fas fa-check-circle"></i> Luôn không ngừng học hỏi, nỗ lực và nâng cao kiến thức, kỹ năng mới cho bản thân.</li>
@@ -818,7 +818,7 @@
                                 </div>
                                 <div class="col-12 col-lg-6 col-right" data-aos="fade-left">
                                     <div class="contact-form">
-                                        <h3>Hoặc gửi tin nhắn</h3>
+                                        <h3>Gửi tin nhắn</h3>
                                         <p>Vui lòng nhập các trường bắt buộc (*)</p>
                                         <form id="form-messenger" target="_self" onsubmit="" action="javascript: postToGoogle()">
                                             <input type="text" value="" placeholder="Họ và tên (*)" name="fullName" id="contactFormName" required>
@@ -854,6 +854,7 @@
                                                     0: function() {
                                                         setTimeout(function() {
                                                             $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Thông tin của bạn đã được gửi thành công.');
+                                                            $('#form-messenger input, #form-messenger textarea').val('');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)
@@ -862,6 +863,7 @@
                                                     200: function() {
                                                         setTimeout(function() {
                                                             $('#sc_form').show().removeClass('alert-info').addClass('alert-success').text('Thông tin của bạn đã được gửi thành công.');
+                                                            $('#form-messenger input, #form-messenger textarea').val('');
                                                             setTimeout(function() {
                                                                 $('#sc_form').hide();
                                                             }, 3000)

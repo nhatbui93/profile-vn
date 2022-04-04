@@ -444,7 +444,7 @@ section.section h2.section-title span:before {
     }
 }
 .block-counter {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .block-counter .counter-area .count-item{
     margin: 10px 0;
@@ -690,8 +690,9 @@ section.section-portfolio p.desc {
 }
 .section-portfolio .project-list .project-item a .title-project {
     font-size: 1rem;
-    margin: 15px 0;
-    padding: 0 5px;
+    padding: 15px 5px;
+    margin: 0px;
+    background: #f0f0f0;
 }
 .section-portfolio .project-list .project-item a:hover .image-box img {
     transform: translateY(-100%);
@@ -725,8 +726,8 @@ section.section-portfolio p.desc {
     }
     .section-portfolio .project-list > .row .project-item .title-project {
         font-size: 0.9rem;
-        margin: 5px 0;
-        min-height: 35px;
+        padding: 5px;
+        min-height: 45px;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -96,7 +96,8 @@ var swiper = new Swiper(".feedback-slider", {
     loop:true,
     autoplay: {
       delay: 6000,
-      disableOnInteraction: false, 
+      disableOnInteraction: true,
+      pauseOnMouseEnter: true,
     },
     pagination: {
       el: ".feedback-slider .swiper-pagination",
